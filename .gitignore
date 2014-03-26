@@ -4,3 +4,11 @@
 *.jar
 *.war
 *.ear
+
+/https-helloworld-client/.gradle/
+/https-helloworld-client/.settings/
+/https-helloworld-client/bin/
+
+/https-helloworld-server/.gradle/
+/https-helloworld-server/.settings/
+/https-helloworld-server/bin/

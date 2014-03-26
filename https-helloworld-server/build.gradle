@@ -1,0 +1,28 @@
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'application'
+
+mainClassName = "cz.rozumim.https.HelloWorldServer"
+
+// sourceCompatibility = 1.6
+
+// In this section you declare where to find the dependencies of your project
+repositories {
+    mavenCentral()
+}
+
+// In this section you declare the dependencies for your production and test code
+dependencies {
+
+	compile 'com.sparkjava:spark-core:1.1.1'
+	compile 'log4j:log4j:1.2.16'
+	compile 'com.google.guava:guava:15.0'
+	compile 'org.slf4j:slf4j-simple:1.6.1'
+	
+    // Declare the dependency for your favourite test framework you want to use in your tests.
+    // TestNG is also supported by the Gradle Test task. Just change the
+    // testCompile dependency to testCompile 'org.testng:testng:6.8.1' and add
+    // 'test.useTestNG()' to your build script.
+    // testCompile 'junit:junit:4.11'
+}
